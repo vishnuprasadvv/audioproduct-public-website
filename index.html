@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundbeat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+       <!--this is header nav-bar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid text-white" >
+          <a class="navbar-brand" href="#">
+            <img src="assets/logo copy.png" alt="SOUNDBEAT" class="mainlogo rounded">
+          </a>
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item ">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              
+              <li class="nav-item-wired dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Wired 
+                </a>
+                
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#cat-wired">Headphones</a></li>
+                  <li><a class="dropdown-item" href="#cat-wired">Earphones</a></li>
+                  
+                </ul>
+              </li>
+              <li class="nav-item-wireless dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Wireless
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#cat-wireless">TWS</a></li>
+                  <li><a class="dropdown-item" href="#cat-wireless">Neck Band</a></li>
+                  <li><a class="dropdown-item" href="#cat-wireless">Headphones</a></li>
+                  
+                </ul>
+              </li>
+
+              <li class="nav-item-speakers dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Speakers
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#cat-speakers">Party</a></li>
+                  <li><a class="dropdown-item" href="#cat-speakers">Portable</a></li>
+                  <li><a class="dropdown-item" href="#cat-speakers">Soundbar</a></li>
+                  
+                </ul>
+              </li>
+              
+            </ul>
+                <ul class="navbar-nav top-right-icons">
+                    <li class="nav-item-search list-unstyled" id="search">
+                    <i class="bi bi-search"></i>
+                 </li>
+                    <li class="nav-item-search list-unstyled">
+                    <i class="bi bi-person">
+                    </i>
+                  </li>
+                  
+                </ul>
+                
+  
+          </div>
+        </div>
+      </nav>
+        <!-- This is main body-->
+      <div class="main">
+        <div class="container">
+          <!--this is slides above md devices-->
+            <div class="row photo-slides">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/headphones-2.jpeg" class="d-block w-100" alt="headphones">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>XM-1000</h5>
+                          <p>Feel the bass</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/speaker-2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>PR-800X</h5>
+                          <p>Your travel companion.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/airpods.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>AIR-5</h5>
+                          <p>For audiophiles.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/wired2.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Pro-2</h5>
+                          <p>For audiophiles.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+           
+          </div>
+
+          <!--products-->
+          
+          <div class="container catergory-div">
+            <div class="row ">
+              <div class="col-cat col-md-6 col-lg-4 text-center">
+                <div class="cat-wired" id="cat-wired">
+                 
+                <a href="wired.html"> 
+                  <img src="assets/wired2mini.jpeg" alt="" class="cat-wired-img img-fluid max-width: 100% rounded">
+                  <label for="" class="cat-text-wired text-decoration-none text-black">Wired</label>
+                </a>
+                
+              </div>
+           
+            </div>
+            <div class="col-cat col-md-6 col-lg-4 text-center">
+              <div class="cat-wireless" id="cat-wireless">
+                <a href="wireless.html"> 
+                  <img src="assets/airpodsmini.jpg" alt="" class="cat-wireless-img img-fluid max-width: 100% rounded">
+                  <label for="" class="cat-text-wireless text-decoration-none text-black">Wireless</label>
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-cat col-md-6 col-lg-4  text-center">
+              <div class="cat-speakers" id="cat-speakers">
+                <a href="speakers.html"> 
+                  <img src="assets/marshall.webp" alt="" class="cat-speakers-img img-fluid max-width: 100% rounded">
+                  <label for="" class="cat-text-speakers text-decoration-none text-black">Speakers</label>
+                </a>
+                
+              </div>
+            </div>
+            
+          </div>
+          <!--products-->  
+          <div class="container">
+            <div class="row">
+              <div class="col trending">
+                <label for="">TRENDING PRODUCTS</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img src="" alt="">
+              </div>
+            </div>
+
+
+          </div>
+
+
+          </div>
+        </div>
+      </div>
+      <!--footer-->
+      <div class="footer">
+        <div class="row footer-details">
+         
+            <div class="col col-footer-logo col-md-4 col-lg-3 col-12">
+              <div >
+                <img src="assets/logo copy.png" alt="" class="footer-logo rounded">
+              </div>
+
+              <div class="social-icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-twitter-x"></i>
+                <i class="bi bi-youtube"></i>
+              </div>
+              <label for="">Let's get social</label>
+            </div>
+          
+
+          <div class="col col-audio-products col-md-4 col-lg-3 col-12">
+             <ul class="list-unstyled ">
+              <li><b>Audio Products</b></li>
+              <br>
+              <li><a href="" class="text-decoration-none text-black">Wired</a></li>
+              <li><a href="" class="text-decoration-none text-black">Wireless</a></li>
+              <li><a href=""class="text-decoration-none text-black">TWS</a></li>
+              <li><a href=""class="text-decoration-none text-black">Speakers</a></li>
+              <li><a href=""class="text-decoration-none text-black">Accessories</a></li>
+             </ul>
+          </div>
+          <div class="col col-company col-md-4 col-lg-3 col-12">
+            <ul class="list-unstyled">
+              <li><b>Company</b></li>
+              <br>
+              <li><a href="" class="text-decoration-none text-black">About Us</a></li>
+              <li><a href="" class="text-decoration-none text-black">Career</a></li>
+              <li><a href="" class="text-decoration-none text-black">Site Map</a></li>
+              <li><a href="" class="text-decoration-none text-black">Speakers</a></li>
+              <li><a href="" class="text-decoration-none text-black">Accessories</a></li>
+             </ul>
+          </div>
+          
+          <div class="col col-support col-md-4 col-lg-3 col-12">
+            <ul class="list-unstyled">
+              <li><b>Support</b></li>
+              <br>
+              <li><a href="" class="text-decoration-none text-black">FAQ</a></li>
+              <li><a href="" class="text-decoration-none text-black">Customer Support</a></li>
+              <li><a href="" class="text-decoration-none text-black">Warranty</a></li>
+              <li><a href="" class="text-decoration-none text-black">Register your product</a></li>
+             </ul>
+          </div>
+        </div>
+        <hr>
+        <!--subscribe area-->
+        <div class="row footer-email ">
+            <div class="col">
+            <form action="/" method="post" class="footer-email-form " id="subscribe">
+              <input type="email" placeholder="Enter your E-mail..." class="emailbox" required>
+              <br>
+              <button type="submit" id="submit-btn" class="btn btn-dark">SUBSCRIBE</button>
+              
+            </form>
+          </div>
+        </div>
+    </div>
+   
+    <div class=" container popup-container text-center">
+      <div class="popup" id="popup">
+
+      <img src="assets/Eo_circle_green_checkmark.svg.png" alt="" class="tick-img">
+      <br>
+      <h2>Thank You</h2>
+   
+      <p>Subscribed successfully!</p>
+      <button type="button" id="okbutton" class="btn btn-success">OK</button>
+      </div>
+    
+    
+    </div>
+    <!--Search popup-->
+    <!-- <div class="container search-popup-container ">
+      <div class="search " id="searchPopup">
+        <input type="text" placeholder="search" class="search-box text-center ">
+        <button type="button" class="close-button btn btn-danger">&times;</button>
+      </div>
+    </div> -->
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
